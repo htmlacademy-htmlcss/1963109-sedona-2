@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Жиделёв](https://up.htmlacademy.ru/htmlcss-individual/2/user/1963109).
-* Наставник: `Неизвестно`.
+* Наставник: [Виталий Драгулин](https://htmlacademy.ru/profile/id1008501).
 
 ---
 
