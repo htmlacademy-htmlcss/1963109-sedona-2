@@ -2,7 +2,7 @@
 
 * Студент: [Максим Жиделёв](https://up.htmlacademy.ru/htmlcss-individual/2/user/1963109).
 * Наставник: [Виталий Драгулин](https://htmlacademy.ru/profile/id1008501).
-
+* Сайт: [Мой проект Седона](https://laskoviy.github.io/1963109-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
