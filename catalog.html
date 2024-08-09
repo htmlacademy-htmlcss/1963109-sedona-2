@@ -26,7 +26,6 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/search.svg" width="18" height="18" alt="Поиск">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -34,10 +33,10 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/favorites.svg" width="18" height="17" alt="Избранное">
               <span class="visually-hidden">
-                Избранное
+                Избранные места
               </span>
+              <span class="notification-badge">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -52,16 +51,13 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <img class="home-page-logo" src="images/breadcrumbs-home-icon.svg" width="12" height="12"
-                  alt="Домашняя страница">
+              <a class="breadcrumbs-link-homepage" href="index.html">
               </a>
             </li>
-            <li class="breadcrumbs-item">
-              <img src="images/breadbrumbs-arrow.svg" width="6" height="10" alt="стрелочка">
+            <li class="breadcrumbs-item-arrow">
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link-hotels">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -137,23 +133,26 @@
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a href="#" class="catalog-view catalog-view-selected">
-          <span class="visually-hidden">Плитка</span>
-          <img src="images/filter-view/catalog-view-table.svg" width="16" height="14" alt="Плитка">
-        </a>
-        <a class="catalog-view" href="#">
-          <span class="visually-hidden">По одной</span>
-          <img src="images/filter-view/catalog-view-single.svg" width="16" height="14" alt="По одной">
-        </a>
-        <a class="catalog-view" href="#">
-          <span class="visually-hidden">Список</span>
-          <img src="images/filter-view/catalog-view-list.svg" width="16" height="14" alt="Список">
-        </a>
+        <ul class="view-buttons">
+          <li class="view-buttons-item">
+            <a href="#" class="view-button-tile catalog-view-selected">
+              <span class="visually-hidden">Плитка</span>
+            </a></li>
+          <li class="view-buttons-item">
+            <a class="view-button-card" href="#">
+              <span class="visually-hidden">Карточка</span>
+            </a></li>
+          <li class="view-buttons-item">
+            <a class="view-button-list" href="#">
+              <span class="visually-hidden">Список</span>
+            </a></li>
+        </ul>
         <ul class="housing-list">
           <li class="housing-card">
             <a class="house-card-link" href="house.html">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Звездное небо">
+              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"
+                alt="Звездное небо">
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 4000 ₽</p>
@@ -161,14 +160,14 @@
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
-              <img src="images/star.svg" width="18" height="17" alt="звезда рейтинга">
             </p>
             <span class="raiting">Рейтинг: 8,5</span>
           </li>
           <li class="housing-card">
             <a class="house-card-link" href="house.html">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Горы вечером">
+              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"
+                alt="Горы вечером">
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 5000 ₽</p>
@@ -176,7 +175,6 @@
             <button class="product-card-button button-green" href="#">в избранном</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
-              <img src="images/star.svg" width="18" height="17" alt="звезда рейтинга">
             </p>
             <span class="raiting">Рейтинг: 9,2</span>
           </li>
@@ -191,7 +189,6 @@
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars three-stars">
               <span class="visually-hidden">Отель 3 звезды</span>
-              <img src="images/star.svg" width="18" height="17" alt="звезда рейтинга">
             </p>
             <span class="raiting">Рейтинг: 6,9</span>
           </li>
@@ -206,7 +203,6 @@
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars two-stars">
               <span class="visually-hidden">Отель 2 звезды</span>
-              <img src="images/star.svg" width="18" height="17" alt="звезда рейтинга">
             </p>
             <span class="raiting">Рейтинг: 5,0</span>
           </li>
@@ -248,19 +244,16 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="https://vk.com/htmlacademy">
-              <img src="images/socials/vk-logo-icon.svg" width="24" height="14" alt="ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://t.me/htmlacademy">
-              <img src="images/socials/telegram-logo-icon.svg" width="18" height="15" alt="Телеграмм">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/socials/youtube-logo-icon.svg" width="22" height="17" alt="YouTube">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -277,7 +270,8 @@
       <section class="footer-logo-html">
         <h2 class="visually-hidden">Логотип Академии</h2>
         <a href="https://htmlacademy.ru/">
-          <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33" alt="Логотип html Academy">
+          <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33"
+            alt="Логотип html Academy">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </section>
