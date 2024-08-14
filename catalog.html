@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -40,7 +41,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button-brown" href="#">Хочу сюда!</a>
+            <a class="button button-brown" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -114,22 +115,22 @@
               <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <label for="min">
                 От
-                <input type="number" id="min" placeholder="0" name="min">
+                <input class="price" type="number" id="min" placeholder="0" name="min">
               </label>
               <label for="max">
                 До
-                <input type="number" id="max" placeholder="9000" name="max">
+                <input class="price" type="number" id="max" placeholder="9000" name="max">
               </label>
             </fieldset>
             <button class="button" type="submit">Применить</button>
-            <button class="button-light" type="reset">Сбросить</button>
+            <button class="button button-light" type="reset">Сбросить</button>
           </form>
         </section>
       </section>
       <section class="filtered-catalog">
         <p class="filtered-number">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
@@ -156,7 +157,7 @@
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 4000 ₽</p>
-            <a class="product-card-button button-brown" href="#">подробнее</a>
+            <a class="product-card-button button button-brown" href="#">подробнее</a>
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
@@ -171,8 +172,8 @@
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 5000 ₽</p>
-            <a class="product-card-button button-brown" href="#">подробнее</a>
-            <button class="product-card-button button-green" href="#">в избранном</button>
+            <a class="product-card-button button button-brown" href="#">подробнее</a>
+            <button class="product-card-button button button-green" href="#">в избранном</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
@@ -185,7 +186,7 @@
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 4000 ₽</p>
-            <a class="product-card-button button-brown" href="#">подробнее</a>
+            <a class="product-card-button button button-brown" href="#">подробнее</a>
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars three-stars">
               <span class="visually-hidden">Отель 3 звезды</span>
@@ -199,7 +200,7 @@
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">от 1500 ₽</p>
-            <a class="product-card-button button-brown" href="#">подробнее</a>
+            <a class="product-card-button button button-brown" href="#">подробнее</a>
             <button class="product-card-button button" href="#">в избранное</button>
             <p class="stars two-stars">
               <span class="visually-hidden">Отель 2 звезды</span>
@@ -221,7 +222,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-rest" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -229,12 +230,12 @@
         </ul>
       </section>
       <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscription-title advantages-promo">Подпишитесь на рассылку</h2>
+        <p class="advantages-promo-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
-          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <input class="subscription-input" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+          <button class="button big-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

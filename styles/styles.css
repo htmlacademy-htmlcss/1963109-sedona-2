@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.main-index {
+  background-color: #ffffff;
+}
+
+.main-inner {
+  background-color: #ffffff;
+}
+
+.page-footer {
+  background-color: #ffffff;
+}
+
+.button {
+  font-family: inherit;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.big-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-brown {
+  background-color:#756157;
+  text-decoration: none;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.button-light{
+  background-color: transparent;
+}
+
+.page-header {
+  color: #000000;
+  font-weight: 700;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  background-color: #82B3D3;
+  background-image: url("../images/background/devider.svg"), url("../images/background/hero-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+}
+
+.advantages {
+  background-color:#83B3D31F;
+  text-align: center;
+}
+
+.promo {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.beauty-road {
+  background-color: #83B3D333;
+}
+
+.advantages-promo {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-promo-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-title {
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.picture-addition {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.search {
+  text-align: center;
+}
+
+.subscription {
+  color: #000000;
+  text-align: center;
+}
+
+.subscription-background {
+  color: #FFFFFF;
+  background-color:#81acc8;
+  background-image: url("../images/background/Subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-input{
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-contacts-address-phone {
+  color: #000000;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.inner-filter {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url("../images/background/filter-background.jpg");
+  background-size: 125% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header {
+  text-align: left;
+}
+
+.inner-header-title{
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs{
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-item{
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.price{
+  font-family: inherit;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.filtered-number {
+  text-align: left;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control{
+  background-color: #FFFFFF;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.house-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+.hotel-card-title {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.product-card-type {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.raiting {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color:#000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-rest {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #FFFFFF;
+}
