@@ -25,19 +25,7 @@ body {
   margin: 0;
 }
 
-.page-header {
-  background-color: #ffffff;
-}
-
-.main-index {
-  background-color: #ffffff;
-}
-
-.main-inner {
-  background-color: #ffffff;
-}
-
-.page-footer {
+.background {
   background-color: #ffffff;
 }
 
@@ -71,7 +59,6 @@ body {
 }
 
 .page-header {
-  color: #000000;
   font-weight: 700;
 }
 
@@ -79,7 +66,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-
   text-align: center;
   text-decoration: none;
 }
@@ -139,7 +125,6 @@ body {
 }
 
 .subscription {
-  color: #000000;
   text-align: center;
 }
 
@@ -204,7 +189,6 @@ body {
 
 .price{
   font-family: inherit;
-  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
