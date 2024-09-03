@@ -27,6 +27,7 @@ body {
   font-style: normal;
   color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
 }
 
 * {
@@ -289,6 +290,9 @@ flex-grow: 1;
 }
 
 .subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 96px 258px 104px;
   margin: 0;
@@ -303,11 +307,20 @@ flex-grow: 1;
 }
 
 .subscription .advantages-promo-description{
+  width: 475px;
+  margin: 0 auto;
   margin-bottom: 54px;
 }
 
+.subscription-form{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+box-sizing: border-box;
+}
+
 .subscription-input{
-  padding: 0;
+  padding: 14px 200px 14px 20px;
   margin: 0;
   font-family: inherit;
   font-size: 20px;
@@ -488,6 +501,7 @@ flex-grow: 1;
 .filtered-catalog-sort{
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   width: 1060px;
   height: auto;
   display: flex;
@@ -534,26 +548,36 @@ flex-grow: 1;
 }
 
 .housing-list{
+  margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
 }
 
 .housing-card{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:  "link link"
+                        "type price"
+                        "btn1 btn2"
+                        "stars rating";
+  row-gap: 16px;
+  column-gap: 20px;
   width: 340px;
   height: 438px;
   padding: 20px;
-  border: 1px solid #000000 ;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 4px;
 }
 
-.housing-card:nth-child(3n){
-  margin-right: 0;
+.house-card-link {
+  grid-area: link;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .hotel-card-image{
@@ -562,73 +586,81 @@ flex-grow: 1;
   height: auto;
   order: -1;
   margin-bottom: 16px;
-}
-
-.house-card-link {
-  color: #000000;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  object-fit: contain;
 }
 
 .hotel-card-title {
   font-size: inherit;
   line-height: inherit;
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 
 .product-card-type {
+  grid-area: type;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: left;
   width: 120px;
-  margin: 0 20px 16px 0;
 }
 
 .product-card-price {
+  grid-area: price;
   font-size: 18px;
   line-height: 21px;
   text-align: right;
   width: 140px;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .product-card-button.button.button-brown{
-  display: block;
+  grid-area: btn1;
+  padding: auto;
 
-  margin-right: 20px;
 }
 
 .product-card-button{
-  display: block;
-  max-width: 140px;
-  max-height: 36px;
+  grid-area: btn2;
+  padding: 0;
+  align-content: center;
+  width: 140px;
+  height: 37px;
+  border: #FFFFFF;
+}
+
+.stars {
+  grid-area: stars;
 }
 
 .raiting {
+  grid-area: rating;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  align-content: center;
+  text-align: center;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
 }
 
 .pagination{
   padding: 0;
   margin: 0;
+  gap: 8px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.pagination-item:not(:last-child){
-  margin-right: 8px;
-}
-
 .pagination-link {
   display: block;
-  width:60px;
+  min-width:60px;
   height: 60px;
-  padding: 11px 23px;
+  padding: 12px 12px;
+  text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
   font-size: 20px;
