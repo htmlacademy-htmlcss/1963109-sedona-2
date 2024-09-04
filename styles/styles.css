@@ -559,10 +559,7 @@ box-sizing: border-box;
 
 .housing-card{
   display: grid;
-  grid-template-areas:  "link link"
-                        "type price"
-                        "btn1 btn2"
-                        "stars rating";
+  grid-template-columns: 1fr 1fr;
   row-gap: 16px;
   column-gap: 20px;
   width: 340px;
@@ -573,7 +570,7 @@ box-sizing: border-box;
 }
 
 .house-card-link {
-  grid-area: link;
+  grid-column: 1 / -1;
   color: #000000;
   text-decoration: none;
   display: flex;
@@ -596,7 +593,6 @@ box-sizing: border-box;
 }
 
 .product-card-type {
-  grid-area: type;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -606,7 +602,6 @@ box-sizing: border-box;
 }
 
 .product-card-price {
-  grid-area: price;
   font-size: 18px;
   line-height: 21px;
   text-align: right;
@@ -615,26 +610,21 @@ box-sizing: border-box;
 }
 
 .product-card-button.button.button-brown{
-  grid-area: btn1;
-  padding: auto;
-
+  padding: 8px 50px;
 }
 
 .product-card-button{
-  grid-area: btn2;
-  padding: 0;
-  align-content: center;
   width: 140px;
+  padding: 8px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   height: 37px;
   border: #FFFFFF;
 }
 
-.stars {
-  grid-area: stars;
-}
-
 .raiting {
-  grid-area: rating;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
