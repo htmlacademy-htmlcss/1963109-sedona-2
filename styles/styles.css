@@ -725,6 +725,15 @@ box-sizing: border-box;
   -webkit-appearance: none;
 }
 
+.modal-input:hover{
+  background-color: #E6E6E6;
+}
+
+.modal-input:focus{
+  outline: none;
+  border: 3px solid #83B3D3;
+}
+
 .input-plus-minus{
   border-radius: 0;
 }
@@ -808,7 +817,15 @@ box-sizing: border-box;
   padding: 14px 10px;
   width: 31px;
   height: 100%;
+}
 
+.input-plus-minus:hover{
+  opacity: 0.33;
+}
+
+.input-plus-minus:focus{
+  outline: none;
+  border: 3px solid #83B3D3;
 }
 
 .counter-button{
@@ -816,6 +833,15 @@ box-sizing: border-box;
   height: 48px;
   padding: 14px 10px;
   border: none;
+}
+
+.counter-button:hover{
+  opacity: 0.33;
+}
+
+.counter-button:focus{
+  outline: none;
+  border: 3px solid #83B3D3;
 }
 
 .decrease{
@@ -850,6 +876,22 @@ box-sizing: border-box;
 .modal-search-button{
   height: 60px;
 }
+
+.modal-search-button:hover{
+background-color: #68A2CA;
+}
+
+.modal-search-button:focus{
+  border:none;
+  outline: none;
+  background-color: #68A2CA;
+}
+
+.modal-search-button:active{
+
+  opacity: 0.3;
+}
+
 
 .inner-header-title{
   padding: 0;
