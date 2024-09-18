@@ -208,17 +208,17 @@
             <div class="date-input-group">
               <label class="date" for="arrival">
                 <span class="modal-input-title">Дата заезда:</span>
-                <input class="modal-input date-input date-in-input" type="text" placeholder="Укажите дату" onfocus="(this.type='date')" name="arrival" id="arrival"
-                  value="27 апреля 2020">
-                  <span class="modal-input-message modal-input-error">Мы не можем отправить вас в прошлое.</span>
+                <input class="modal-input date-input date-in-input" type="text" placeholder="27 апреля 2020"
+                  name="arrival" id="arrival">
+                <span class="modal-input-message modal-input-error">Мы не можем отправить вас в прошлое.</span>
               </label>
             </div>
             <div class="date-input-group">
               <label class="date" for="departure">
                 <span class="modal-input-title">Дата выезда:</span>
-                <input class="modal-input date-input date-out-input" type="text" placeholder="Укажите дату" onfocus="(this.type='date')" name="departure" id="departure"
-                  value="1 сентября 2023">
-                  <span class="modal-input-message">На эти даты есть свободные номера. Пока есть.</span>
+                <input class="modal-input date-input date-out-input" type="text" placeholder="1 сентября 2023"
+                  name="departure" id="departure">
+                <span class="modal-input-message">На эти даты есть свободные номера. Пока есть.</span>
               </label>
             </div>
             <div class="counter-group">
@@ -230,13 +230,30 @@
                 </div>
               </label>
               <label class="counter-label children" for="children-counter">
-                <span class="modal-input-title">Дети:</span>
-                <div class="info"></div>
-                <div class="popover popover-info">
-                  <div class="popover-content">
-                    <p class="content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                  </div>
-                </div>
+                <span class="form-label form-label-icon">
+                  <span class="modal-input-title">Дети:</span>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <clipPath id="a">
+                            <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
+                              fill-opacity="0" />
+                          </clipPath>
+                        </defs>
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <g clip-path="url(#a)">
+                          <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" />
+                        </g>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                      которые будут с вами, возраст которых от 6 до
+                      18 лет.
+                      Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
                 <div class="counter">
                   <button class="counter-button decrease"></button>
                   <input class="modal-input input-plus-minus" type="number" id="children-counter" value="2">
