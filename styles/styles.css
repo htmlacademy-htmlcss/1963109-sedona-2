@@ -703,13 +703,13 @@ box-sizing: border-box;
   -webkit-appearance: none;
 }
 
-.modal-input:hover{
+.date-input:hover{
   background-color: #E6E6E6;
 }
 
-.modal-input:focus{
-  outline: none;
-  border: 3px solid #83B3D3;
+.date-input:focus{
+  outline: 3px solid #83B3D3;
+  border: none;
 }
 
 .input-plus-minus{
@@ -790,8 +790,7 @@ box-sizing: border-box;
   border: none;
 }
 
-.counter-button:hover,
-.input-plus-minus:hover{
+.counter-button:hover{
   opacity: 0.33;
 }
 
@@ -1121,8 +1120,6 @@ outline:3px #83B3D3;
   opacity: 0.33;
   color: #000000;
 }
-
-
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1461,8 +1458,8 @@ background-image: url("../images/filter-view/catalog-view-table.svg");
   position: absolute;
   margin-top: 4px;
   margin-left: 10px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .tooltip-toggle {
@@ -1475,10 +1472,6 @@ background-image: url("../images/filter-view/catalog-view-table.svg");
 
 .tooltip-icon{
   color: #FFFFFF;
-}
-
-.tooltip-toggle:hover .tooltip-icon {
-  fill: #68A2CA;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
