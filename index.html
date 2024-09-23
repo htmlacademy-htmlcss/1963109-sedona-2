@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32"> <!-- 32×32 -->
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -19,7 +20,7 @@
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -28,6 +29,10 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
+                <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none">
+                  <path fill="#000"
+                    d="m18.5 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+                </svg>
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -35,6 +40,10 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
+                <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                  <path fill="#000"
+                    d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="visually-hidden">
                   Избранные места
                 </span>
@@ -106,7 +115,8 @@
           <ul class="advantages-list services">
             <li class="advantages-item">
               <h3 class="advantages-title">Жильё</h3>
-              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле,
+              <p class="advantages-description">Рекомендуем пожить
+                в настоящем мотеле,
                 всё как в кино!</p>
             </li>
             <li class="advantages-item light">
@@ -123,8 +133,8 @@
         </section>
         <section class="promo search">
           <h2 class="advantages-promo">Заинтересовались?</h2>
-          <p class="advantages-promo-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие
-            предложения гостиниц в Седоне</p>
+          <p class="advantages-promo-description">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-brown big-button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscription subscription-special">
@@ -133,7 +143,7 @@
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
-            <input class="subscription-input" type="email" id="subscribe-email" name="user-email"
+            <input class="form-input subscription-input" type="email" id="subscribe-email" name="user-email"
               placeholder="Ваш e-mail">
             <button class="button big-button" type="submit">Подписаться</button>
           </form>
@@ -201,67 +211,71 @@
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <section class="modal-content">
-            <h2 class="modal-title">Поиск гостинницы в Седоне</h2>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <button class="modal-close-button">
               <span class="visually-hidden">Закрыть</span>
             </button>
-            <div class="date-input-group">
-              <label class="date" for="arrival">
-                <span class="modal-input-title">Дата заезда:</span>
-                <input class="modal-input date-input date-in-input" type="text" placeholder="27 апреля 2020"
-                  name="arrival" id="arrival">
-                <span class="modal-input-message modal-input-error">Мы не можем отправить вас в прошлое.</span>
-              </label>
-            </div>
-            <div class="date-input-group">
-              <label class="date" for="departure">
-                <span class="modal-input-title">Дата выезда:</span>
-                <input class="modal-input date-input date-out-input" type="text" placeholder="1 сентября 2023"
-                  name="departure" id="departure">
-                <span class="modal-input-message">На эти даты есть свободные номера. Пока есть.</span>
-              </label>
-            </div>
-            <div class="counter-group">
-              <label class="counter-label adults" for="adults-counter">
-                <span class="modal-input-title">Взрослые:</span>
-                <div class="counter"><button class="counter-button decrease"></button>
-                  <input class="modal-input input-plus-minus" type="number" id="adults-counter" value="2">
-                  <button class="counter-button increase"></button>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="date-input-group">
+                <label class="date" for="arrival">
+                  <span class="modal-input-title">Дата заезда:</span>
+                  <input class="form-input modal-input date-input date-in-input" type="text" value="27 апреля 2020"
+                    name="arrival" id="arrival" required>
+                  <span class="modal-input-message modal-input-error">Мы не можем отправить вас в прошлое.</span>
+                </label>
+              </div>
+              <div class="date-input-group">
+                <label class="date" for="departure">
+                  <span class="modal-input-title">Дата выезда:</span>
+                  <input class="form-input modal-input date-input date-out-input" type="text" value="1 сентября 2023"
+                    name="departure" id="departure" required>
+                  <span class="modal-input-message">На эти даты есть свободные номера. Пока есть.</span>
+                </label>
+              </div>
+              <div class="counter-group">
+                <div class="adults-group">
+                  <label class="counter-label adults" for="adults-counter">Взрослые:</label>
+                  <div class="counter">
+                    <button class="counter-button decrease"></button>
+                    <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter" value="2">
+                    <button class="counter-button increase"></button>
+                  </div>
                 </div>
-              </label>
-              <label class="counter-label children" for="children-counter">
-                <span class="form-label form-label-icon">
-                  <span class="modal-input-title">Дети:</span>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <clipPath id="a">
-                            <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
-                              fill-opacity="0" />
-                          </clipPath>
-                        </defs>
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                        <g clip-path="url(#a)">
-                          <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" />
-                        </g>
-                      </svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                      которые будут с вами, возраст которых от 6 до
-                      18 лет.
-                      Дети до 6 лет размещаются бесплатно.</span>
+                <div class="children-group">
+                  <label class="counter-label children" for="children-counter">Дети:</label>
+                  <span class="form-label form-label-icon">
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <clipPath id="a">
+                              <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
+                                fill-opacity="0" />
+                            </clipPath>
+                          </defs>
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <g clip-path="url(#a)">
+                            <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                        которые будут с вами, возраст которых от 6 до
+                        18 лет.
+                        Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
                   </span>
-                </span>
-                <div class="counter">
-                  <button class="counter-button decrease"></button>
-                  <input class="modal-input input-plus-minus" type="number" id="children-counter" value="2">
-                  <button class="counter-button increase"></button>
+                  <div class="counter">
+                    <button class="counter-button decrease"></button>
+                    <input class="form-input modal-input input-plus-minus" type="number" id="children-counter"
+                      value="2">
+                    <button class="counter-button increase"></button>
+                  </div>
                 </div>
-              </label>
-            </div>
-            <button class="button modal-search-button">Найти</button>
+              </div>
+              <button class="button modal-search-button" type="submit">Найти</button>
+            </form>
           </section>
         </div>
       </div>
