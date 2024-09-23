@@ -1562,7 +1562,6 @@ img{
   width: 140px;
   min-height: 36px;
   padding: 8px 18px;
-
   border: #FFFFFF;
 }
 
@@ -1666,7 +1665,6 @@ img{
 
 .form-label-icon {
   position: relative;
-
   margin-left: 10px;
   margin-right: 46px;
 }
