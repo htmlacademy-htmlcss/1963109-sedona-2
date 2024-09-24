@@ -222,8 +222,8 @@ img{
 .navigation-logo {
   display: block;
   position: absolute;
-  left: 0 px;
-  top: 0 px;
+  left: 0;
+  top: 0;
 }
 
 .navigation-user {
@@ -361,11 +361,11 @@ img{
   background-color: #FFFFFF;
 }
 
-.services .advantages-item .advantages-title {
+.services-item .advantages-title {
   margin-bottom: 30px;
 }
 
-.services .advantages-item .advantages-title::before {
+.services-item .advantages-title::before {
   content: "";
   display: block;
   width: 75px;
@@ -377,15 +377,15 @@ img{
   background-position: center;
 }
 
-.services .advantages-item:nth-child(1) .advantages-title::before {
+.services-item:nth-child(1) .advantages-title::before {
   background-image: url("../images/icons/housing-icon.svg");
 }
 
-.services .advantages-item:nth-child(2) .advantages-title::before {
+.services-item:nth-child(2) .advantages-title::before {
   background-image: url("../images/icons/burger-icon.svg");
 }
 
-.services .advantages-item:nth-child(3) .advantages-title::before {
+.services-item:nth-child(3) .advantages-title::before {
   background-image: url("../images/icons/souvenir-icon.svg");
 }
 
@@ -401,7 +401,7 @@ img{
   white-space: pre-line;
 }
 
-.advantages-list.features .advantages-title::before {
+.features .advantages-title::before {
   position: absolute;
   bottom: -32px;
   left: 50%;
@@ -412,7 +412,7 @@ img{
   content: "";
 }
 
-.advantages-item.picture-addition .advantages-item-picture-discription .advantages-title::before {
+.advantages-item-picture-discription .advantages-title::before {
   background-color: #FFFFFF4D;
 }
 
@@ -818,7 +818,7 @@ img{
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   text-transform: uppercase;
 }
@@ -876,7 +876,7 @@ img{
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   position: relative;
 }
@@ -926,7 +926,7 @@ img{
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   position: relative;
 }
