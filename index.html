@@ -51,7 +51,7 @@
               </a>
             </li>
           </ul>
-          <a class="button button-brown button-link" href="#">Хочу сюда!</a>
+          <a class="button button-brown button-link">Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-container main-index" data-test="main">
@@ -221,44 +221,48 @@
                 </label>
               </div>
               <div class="counter-group">
-                <div class="adults-group">
-                  <label class="counter-label adults" for="adults-counter">Взрослые:</label>
-                  <div class="counter">
-                    <button class="counter-button decrease"></button>
-                    <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter" value="2">
-                    <button class="counter-button increase"></button>
+                <div class="group-section">
+                  <div class="adults-group">
+                    <label class="counter-label adults" for="adults-counter">Взрослые:</label>
+                    <div class="counter">
+                      <button class="counter-button decrease"></button>
+                      <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter" value="2">
+                      <button class="counter-button increase"></button>
+                    </div>
                   </div>
                 </div>
-                <div class="children-group">
-                  <label class="counter-label children" for="children-counter">Дети:</label>
-                  <span class="form-label form-label-icon">
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <clipPath id="a">
-                              <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
-                                fill-opacity="0" />
-                            </clipPath>
-                          </defs>
-                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                          <g clip-path="url(#a)">
-                            <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" />
-                          </g>
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                        которые будут с вами, возраст которых от 6 до
-                        18 лет.
-                        Дети до 6 лет размещаются бесплатно.</span>
+                <div class="group-section">
+                  <div class="children-group">
+                    <label class="counter-label children" for="children-counter">Дети:</label>
+                    <span class="form-label form-label-icon">
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                          <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                              <clipPath id="a">
+                                <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
+                                  fill-opacity="0" />
+                              </clipPath>
+                            </defs>
+                            <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                            <g clip-path="url(#a)">
+                              <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" />
+                            </g>
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                          которые будут с вами, возраст которых от 6 до
+                          18 лет.
+                          Дети до 6 лет размещаются бесплатно.</span>
+                      </span>
                     </span>
-                  </span>
-                  <div class="counter">
-                    <button class="counter-button decrease"></button>
-                    <input class="form-input modal-input input-plus-minus" type="number" id="children-counter"
-                      value="2">
-                    <button class="counter-button increase"></button>
+                    <div class="counter">
+                      <button class="counter-button decrease"></button>
+                      <input class="form-input modal-input input-plus-minus" type="number" id="children-counter"
+                        value="2">
+                      <button class="counter-button increase"></button>
+                    </div>
                   </div>
                 </div>
               </div>

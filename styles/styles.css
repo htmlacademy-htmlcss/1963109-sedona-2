@@ -259,7 +259,8 @@ img{
   width: 160px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 14px 0 auto 20px;
+  margin-left: 20px;
+  align-self: center;
 }
 
 .navigation-user-item.button-link .button {
@@ -847,18 +848,21 @@ input[type=number] {
   row-gap: 5px;
 }
 
-.adults-group {
-  width: 247px;
+.group-section{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.adults-group {
+  display: flex;
   align-items: center;
   position: relative;
 }
 
 .children-group {
-  width: 242px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
 }
@@ -871,6 +875,11 @@ input[type=number] {
   letter-spacing: 0;
   text-align: left;
   position: relative;
+  margin-right: 46px;
+}
+
+.counter-label.children{
+  margin-right: 10px;
 }
 
 .counter {
@@ -881,11 +890,11 @@ input[type=number] {
   display: flex;
 }
 
-
 .input-plus-minus {
-  padding: 14px 10px;
+  padding: 14px 5px;
   width: 31px;
   height: 100%;
+  text-align: center;
 }
 
 .counter-button {
@@ -1549,7 +1558,6 @@ line-height: 28px;
 
 .form-label-icon {
   position: relative;
-  margin-left: 10px;
   margin-right: 46px;
 }
 
