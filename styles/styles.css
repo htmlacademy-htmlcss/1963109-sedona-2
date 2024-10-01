@@ -21,12 +21,6 @@
   font-display: swap;
 }
 
-/* button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner {border:0;padding:0;margin:0; background-color: #f2f2f2;} */
-
 html {
   height: 100%;
 }
@@ -49,7 +43,9 @@ img{
   object-fit: contain;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -117,7 +113,6 @@ img{
   cursor: pointer;
 }
 
-
 .button:disabled,
 .button-brown:disabled {
   background-color: #E5E5E5;
@@ -126,7 +121,6 @@ img{
 .button-light:disabled{
   opacity: 0.3;
 }
-
 
 .big-button:not(:disabled):hover,
 .big-button:not(:disabled):focus-within,
@@ -460,7 +454,7 @@ img{
 }
 
 .advantages-promo {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   margin-top: 0;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -483,7 +477,7 @@ img{
 
 
 .advantages-promo-description {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   max-width: 651px;
