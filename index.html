@@ -61,9 +61,11 @@
             alt="Добро пожаловать в великолепную Седону">
         </section>
         <section class="advantages" data-test="advantages">
-            <h2 class="advantages-promo advantages-promo-first">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="advantages-promo-description advantages-promo-description-first">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-            </p>
+          <h2 class="advantages-promo advantages-promo-first">Седона — небольшой городок в Аризоне, заслуживающий
+            большего!</h2>
+          <p class="advantages-promo-description advantages-promo-description-first">Рассмотрим причины, по которым
+            Седона круче, чем Гранд-Каньон!
+          </p>
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list features">
             <li class="advantages-item picture-addition">
@@ -101,8 +103,9 @@
           </ul>
         </section>
         <section class="advantages advantages-second">
-            <h2 class="advantages-promo advantages-promo-second">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="advantages-promo-description advantages-promo-description-second">Опытный персонал и качественное обслуживание!</p>
+          <h2 class="advantages-promo advantages-promo-second">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <p class="advantages-promo-description advantages-promo-description-second">Опытный персонал и качественное
+            обслуживание!</p>
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list services">
             <li class="advantages-item services-item services-item-house">
@@ -127,7 +130,7 @@
           <h2 class="advantages-promo">Заинтересовались?</h2>
           <p class="advantages-promo-description">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button button-brown big-button">Поиск гостиницы в Седоне</button>
+          <button class="button button-brown big-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription subscription-special" data-test="subscribe">
           <h2 class="subscription-title advantages-promo">Подпишитесь на рассылку</h2>
@@ -200,7 +203,7 @@
         <div class="modal modal-search">
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button">
+            <button class="modal-close-button" type="button">
               <span class="visually-hidden">Закрыть</span>
             </button>
             <form action="https://echo.htmlacademy.ru/" method="post">
@@ -225,9 +228,30 @@
                   <div class="adults-group">
                     <label class="counter-label adults" for="adults-counter">Взрослые:</label>
                     <div class="counter">
-                      <button class="counter-button decrease"></button>
-                      <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter" value="2">
-                      <button class="counter-button increase"></button>
+                      <button class="counter-button decrease" type="button">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <clipPath id="a">
+                              <rect rx="-.5" width="19" height="19" transform="translate(.5 .5)" fill="#fff"
+                                fill-opacity="0" />
+                            </clipPath>
+                          </defs>
+                          <g clip-path="url(#a)">
+                            <path d="M3 11V9h14v2H3Z" fill="currentColor" fill-rule="evenodd" />
+                          </g>
+                        </svg>
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
+                      <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter"
+                        name="adults-counter" value="2">
+                      <button class="counter-button increase" type="button">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -241,7 +265,7 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <defs>
                               <clipPath id="a">
-                                <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="#fff"
+                                <rect rx="-.5" width="19" height="19" transform="translate(3.5 3.5)" fill="currentColor"
                                   fill-opacity="0" />
                               </clipPath>
                             </defs>
@@ -258,10 +282,30 @@
                       </span>
                     </span>
                     <div class="counter">
-                      <button class="counter-button decrease"></button>
+                      <button class="counter-button decrease" type="button">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <clipPath id="a">
+                              <rect rx="-.5" width="19" height="19" transform="translate(.5 .5)" fill="currentColor"
+                                fill-opacity="0" />
+                            </clipPath>
+                          </defs>
+                          <g clip-path="url(#a)">
+                            <path d="M3 11V9h14v2H3Z" fill="currentColor" fill-rule="evenodd" />
+                          </g>
+                        </svg>
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
                       <input class="form-input modal-input input-plus-minus" type="number" id="children-counter"
-                        value="2">
-                      <button class="counter-button increase"></button>
+                        name="children-counter" value="2">
+                      <button class="counter-button increase" type="button">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
                     </div>
                   </div>
                 </div>
