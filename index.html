@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -61,8 +61,8 @@
             alt="Добро пожаловать в великолепную Седону">
         </section>
         <section class="advantages" data-test="advantages">
-          <h2 class="advantages-promo advantages-promo-first">Седона — небольшой городок в Аризоне, заслуживающий
-            большего!</h2>
+          <h2 class="advantages-promo advantages-promo-first">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</h2>
           <p class="advantages-promo-description advantages-promo-description-first">Рассмотрим причины, по которым
             Седона круче, чем Гранд-Каньон!
           </p>
@@ -139,7 +139,7 @@
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
             <input class="form-input subscription-input" type="email" id="subscribe-email" name="user-email"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="button big-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -204,12 +204,18 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <button class="modal-close-button" type="button">
+              <svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14 1.29 12.7 0 7 5.7 1.29 0 0 1.29 5.7 7 0 12.7 1.29 14 7 8.29 12.7 14l1.3-1.3L8.29 7 14 1.29Z"
+                  fill="currentColor" />
+              </svg>
               <span class="visually-hidden">Закрыть</span>
             </button>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="date-input-group">
                 <label class="date" for="arrival">
-                  <span class="modal-input-title">Дата заезда:</span>
+                  <span class="modal-input-title">Дата Заезда:</span>
                   <input class="form-input modal-input date-input date-in-input" type="text" value="27 апреля 2020"
                     name="arrival" id="arrival" required>
                   <span class="modal-input-message modal-input-error">Мы не можем отправить вас в прошлое.</span>
@@ -217,7 +223,7 @@
               </div>
               <div class="date-input-group">
                 <label class="date" for="departure">
-                  <span class="modal-input-title">Дата выезда:</span>
+                  <span class="modal-input-title">Дата Выезда:</span>
                   <input class="form-input modal-input date-input date-out-input" type="text" value="1 сентября 2023"
                     name="departure" id="departure" required>
                   <span class="modal-input-message">На эти даты есть свободные номера. Пока есть.</span>
@@ -233,7 +239,7 @@
                           xmlns="http://www.w3.org/2000/svg">
                           <defs>
                             <clipPath id="a">
-                              <rect rx="-.5" width="19" height="19" transform="translate(.5 .5)" fill="#fff"
+                              <rect rx="-.5" width="19" height="19" transform="translate(.5 .5)" fill="currentColor"
                                 fill-opacity="0" />
                             </clipPath>
                           </defs>
@@ -246,8 +252,8 @@
                       <input class="form-input modal-input input-plus-minus" type="number" id="adults-counter"
                         name="adults-counter" value="2">
                       <button class="counter-button increase" type="button">
-                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20" fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20"
+                          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor" />
                         </svg>
                         <span class="visually-hidden">Увеличить</span>
@@ -300,8 +306,8 @@
                       <input class="form-input modal-input input-plus-minus" type="number" id="children-counter"
                         name="children-counter" value="2">
                       <button class="counter-button increase" type="button">
-                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20" fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg">
+                        <svg class="quantity-change-icon" width="20" height="20" viewBox="-3 -3 20 20"
+                          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor" />
                         </svg>
                         <span class="visually-hidden">Увеличить</span>
