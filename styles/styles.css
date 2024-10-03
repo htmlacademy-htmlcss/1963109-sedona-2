@@ -472,7 +472,8 @@ img {
 .advantages-promo-first {
   margin-top: 69px;
   margin-bottom: 25px;
-  width: 620px;
+  min-width: 620px;
+  white-space: pre-line;
 }
 
 .advantages-promo-second {
@@ -532,7 +533,7 @@ img {
 .subscription-special {
   color: #FFFFFF;
   background-color: #81acc8;
-  background-image: url("../images/background/Subscribe-background.jpg");
+  background-image: url("../images/background/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -739,9 +740,6 @@ img {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url("../images/icons/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -759,7 +757,7 @@ img {
   opacity: 0.33;
 }
 
-.modal-close-button:active {
+.modal-close-button:active .close-icon {
   opacity: 0.3;
 }
 
@@ -924,10 +922,6 @@ input[type=number] {
   color: #000000;
 }
 
-.counter-button:active .quantity-change-icon {
-  color: #7561574D;
-}
-
 .counter-button:focus {
   border: none;
   outline: none;
@@ -937,6 +931,10 @@ input[type=number] {
   outline: 3px solid #83B3D3;
   color: #000000;
   border-radius: 4px;
+}
+
+.counter-button:active .quantity-change-icon {
+  color: #0000004d;
 }
 
 .modal-input-message {
